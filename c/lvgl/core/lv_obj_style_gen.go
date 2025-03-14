@@ -8,295 +8,295 @@ import (
 )
 
 //go:linkname LvStyleSetWidth C.lv_style_set_width
-func LvStyleSetWidth(style *lv_style_t, value c.Int)
+func LvStyleSetWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetBgOpa C.lv_style_set_bg_opa
-func LvStyleSetBgOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBgOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBgColor C.lv_style_set_bg_color
-func LvStyleSetBgColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetBgColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetRadius C.lv_style_set_radius
-func LvStyleSetRadius(style *lv_style_t, value c.Int)
+func LvStyleSetRadius(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadRight C.lv_style_set_pad_right
-func LvStyleSetPadRight(style *lv_style_t, value c.Int)
+func LvStyleSetPadRight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMinWidth C.lv_style_set_min_width
-func LvStyleSetMinWidth(style *lv_style_t, value c.Int)
+func LvStyleSetMinWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMaxWidth C.lv_style_set_max_width
-func LvStyleSetMaxWidth(style *lv_style_t, value c.Int)
+func LvStyleSetMaxWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetHeight C.lv_style_set_height
-func LvStyleSetHeight(style *lv_style_t, value c.Int)
+func LvStyleSetHeight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMinHeight C.lv_style_set_min_height
-func LvStyleSetMinHeight(style *lv_style_t, value c.Int)
+func LvStyleSetMinHeight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMaxHeight C.lv_style_set_max_height
-func LvStyleSetMaxHeight(style *lv_style_t, value c.Int)
+func LvStyleSetMaxHeight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetLength C.lv_style_set_length
-func LvStyleSetLength(style *lv_style_t, value c.Int)
+func LvStyleSetLength(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetX C.lv_style_set_x
-func LvStyleSetX(style *lv_style_t, value c.Int)
+func LvStyleSetX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetY C.lv_style_set_y
-func LvStyleSetY(style *lv_style_t, value c.Int)
+func LvStyleSetY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetAlign C.lv_style_set_align
-func LvStyleSetAlign(style *lv_style_t, value lv_align_t)
+func LvStyleSetAlign(style *LvStyleT, value lv_align_t)
 
 //go:linkname LvStyleSetTransformWidth C.lv_style_set_transform_width
-func LvStyleSetTransformWidth(style *lv_style_t, value c.Int)
+func LvStyleSetTransformWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformHeight C.lv_style_set_transform_height
-func LvStyleSetTransformHeight(style *lv_style_t, value c.Int)
+func LvStyleSetTransformHeight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTranslateX C.lv_style_set_translate_x
-func LvStyleSetTranslateX(style *lv_style_t, value c.Int)
+func LvStyleSetTranslateX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTranslateY C.lv_style_set_translate_y
-func LvStyleSetTranslateY(style *lv_style_t, value c.Int)
+func LvStyleSetTranslateY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTranslateRadial C.lv_style_set_translate_radial
-func LvStyleSetTranslateRadial(style *lv_style_t, value c.Int)
+func LvStyleSetTranslateRadial(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformScaleX C.lv_style_set_transform_scale_x
-func LvStyleSetTransformScaleX(style *lv_style_t, value c.Int)
+func LvStyleSetTransformScaleX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformScaleY C.lv_style_set_transform_scale_y
-func LvStyleSetTransformScaleY(style *lv_style_t, value c.Int)
+func LvStyleSetTransformScaleY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformRotation C.lv_style_set_transform_rotation
-func LvStyleSetTransformRotation(style *lv_style_t, value c.Int)
+func LvStyleSetTransformRotation(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformPivotX C.lv_style_set_transform_pivot_x
-func LvStyleSetTransformPivotX(style *lv_style_t, value c.Int)
+func LvStyleSetTransformPivotX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformPivotY C.lv_style_set_transform_pivot_y
-func LvStyleSetTransformPivotY(style *lv_style_t, value c.Int)
+func LvStyleSetTransformPivotY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformSkewX C.lv_style_set_transform_skew_x
-func LvStyleSetTransformSkewX(style *lv_style_t, value c.Int)
+func LvStyleSetTransformSkewX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTransformSkewY C.lv_style_set_transform_skew_y
-func LvStyleSetTransformSkewY(style *lv_style_t, value c.Int)
+func LvStyleSetTransformSkewY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadTop C.lv_style_set_pad_top
-func LvStyleSetPadTop(style *lv_style_t, value c.Int)
+func LvStyleSetPadTop(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadBottom C.lv_style_set_pad_bottom
-func LvStyleSetPadBottom(style *lv_style_t, value c.Int)
+func LvStyleSetPadBottom(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadLeft C.lv_style_set_pad_left
-func LvStyleSetPadLeft(style *lv_style_t, value c.Int)
+func LvStyleSetPadLeft(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadRow C.lv_style_set_pad_row
-func LvStyleSetPadRow(style *lv_style_t, value c.Int)
+func LvStyleSetPadRow(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadColumn C.lv_style_set_pad_column
-func LvStyleSetPadColumn(style *lv_style_t, value c.Int)
+func LvStyleSetPadColumn(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetPadRadial C.lv_style_set_pad_radial
-func LvStyleSetPadRadial(style *lv_style_t, value c.Int)
+func LvStyleSetPadRadial(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMarginTop C.lv_style_set_margin_top
-func LvStyleSetMarginTop(style *lv_style_t, value c.Int)
+func LvStyleSetMarginTop(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMarginBottom C.lv_style_set_margin_bottom
-func LvStyleSetMarginBottom(style *lv_style_t, value c.Int)
+func LvStyleSetMarginBottom(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMarginLeft C.lv_style_set_margin_left
-func LvStyleSetMarginLeft(style *lv_style_t, value c.Int)
+func LvStyleSetMarginLeft(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetMarginRight C.lv_style_set_margin_right
-func LvStyleSetMarginRight(style *lv_style_t, value c.Int)
+func LvStyleSetMarginRight(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetBgGradColor C.lv_style_set_bg_grad_color
-func LvStyleSetBgGradColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetBgGradColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetBgGradDir C.lv_style_set_bg_grad_dir
-func LvStyleSetBgGradDir(style *lv_style_t, value lv_grad_dir_t)
+func LvStyleSetBgGradDir(style *LvStyleT, value lv_grad_dir_t)
 
 //go:linkname LvStyleSetBgMainStop C.lv_style_set_bg_main_stop
-func LvStyleSetBgMainStop(style *lv_style_t, value c.Int)
+func LvStyleSetBgMainStop(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetBgGradStop C.lv_style_set_bg_grad_stop
-func LvStyleSetBgGradStop(style *lv_style_t, value c.Int)
+func LvStyleSetBgGradStop(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetBgMainOpa C.lv_style_set_bg_main_opa
-func LvStyleSetBgMainOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBgMainOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBgGradOpa C.lv_style_set_bg_grad_opa
-func LvStyleSetBgGradOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBgGradOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBgGrad C.lv_style_set_bg_grad
-func LvStyleSetBgGrad(style *lv_style_t, value *lv_grad_dsc_t)
+func LvStyleSetBgGrad(style *LvStyleT, value *lv_grad_dsc_t)
 
 //go:linkname LvStyleSetBgImageSrc C.lv_style_set_bg_image_src
-func LvStyleSetBgImageSrc(style *lv_style_t, value unsafe.Pointer)
+func LvStyleSetBgImageSrc(style *LvStyleT, value unsafe.Pointer)
 
 //go:linkname LvStyleSetBgImageOpa C.lv_style_set_bg_image_opa
-func LvStyleSetBgImageOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBgImageOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBgImageRecolor C.lv_style_set_bg_image_recolor
-func LvStyleSetBgImageRecolor(style *lv_style_t, value lv_color_t)
+func LvStyleSetBgImageRecolor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetBgImageRecolorOpa C.lv_style_set_bg_image_recolor_opa
-func LvStyleSetBgImageRecolorOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBgImageRecolorOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBgImageTiled C.lv_style_set_bg_image_tiled
-func LvStyleSetBgImageTiled(style *lv_style_t, value bool)
+func LvStyleSetBgImageTiled(style *LvStyleT, value bool)
 
 //go:linkname LvStyleSetBorderColor C.lv_style_set_border_color
-func LvStyleSetBorderColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetBorderColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetBorderOpa C.lv_style_set_border_opa
-func LvStyleSetBorderOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetBorderOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetBorderWidth C.lv_style_set_border_width
-func LvStyleSetBorderWidth(style *lv_style_t, value c.Int)
+func LvStyleSetBorderWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetBorderSide C.lv_style_set_border_side
-func LvStyleSetBorderSide(style *lv_style_t, value lv_border_side_t)
+func LvStyleSetBorderSide(style *LvStyleT, value lv_border_side_t)
 
 //go:linkname LvStyleSetBorderPost C.lv_style_set_border_post
-func LvStyleSetBorderPost(style *lv_style_t, value bool)
+func LvStyleSetBorderPost(style *LvStyleT, value bool)
 
 //go:linkname LvStyleSetOutlineWidth C.lv_style_set_outline_width
-func LvStyleSetOutlineWidth(style *lv_style_t, value c.Int)
+func LvStyleSetOutlineWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetOutlineColor C.lv_style_set_outline_color
-func LvStyleSetOutlineColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetOutlineColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetOutlineOpa C.lv_style_set_outline_opa
-func LvStyleSetOutlineOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetOutlineOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetOutlinePad C.lv_style_set_outline_pad
-func LvStyleSetOutlinePad(style *lv_style_t, value c.Int)
+func LvStyleSetOutlinePad(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetShadowWidth C.lv_style_set_shadow_width
-func LvStyleSetShadowWidth(style *lv_style_t, value c.Int)
+func LvStyleSetShadowWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetShadowOffsetX C.lv_style_set_shadow_offset_x
-func LvStyleSetShadowOffsetX(style *lv_style_t, value c.Int)
+func LvStyleSetShadowOffsetX(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetShadowOffsetY C.lv_style_set_shadow_offset_y
-func LvStyleSetShadowOffsetY(style *lv_style_t, value c.Int)
+func LvStyleSetShadowOffsetY(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetShadowSpread C.lv_style_set_shadow_spread
-func LvStyleSetShadowSpread(style *lv_style_t, value c.Int)
+func LvStyleSetShadowSpread(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetShadowColor C.lv_style_set_shadow_color
-func LvStyleSetShadowColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetShadowColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetShadowOpa C.lv_style_set_shadow_opa
-func LvStyleSetShadowOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetShadowOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetImageOpa C.lv_style_set_image_opa
-func LvStyleSetImageOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetImageOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetImageRecolor C.lv_style_set_image_recolor
-func LvStyleSetImageRecolor(style *lv_style_t, value lv_color_t)
+func LvStyleSetImageRecolor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetImageRecolorOpa C.lv_style_set_image_recolor_opa
-func LvStyleSetImageRecolorOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetImageRecolorOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetLineWidth C.lv_style_set_line_width
-func LvStyleSetLineWidth(style *lv_style_t, value c.Int)
+func LvStyleSetLineWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetLineDashWidth C.lv_style_set_line_dash_width
-func LvStyleSetLineDashWidth(style *lv_style_t, value c.Int)
+func LvStyleSetLineDashWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetLineDashGap C.lv_style_set_line_dash_gap
-func LvStyleSetLineDashGap(style *lv_style_t, value c.Int)
+func LvStyleSetLineDashGap(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetLineRounded C.lv_style_set_line_rounded
-func LvStyleSetLineRounded(style *lv_style_t, value bool)
+func LvStyleSetLineRounded(style *LvStyleT, value bool)
 
 //go:linkname LvStyleSetLineColor C.lv_style_set_line_color
-func LvStyleSetLineColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetLineColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetLineOpa C.lv_style_set_line_opa
-func LvStyleSetLineOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetLineOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetArcWidth C.lv_style_set_arc_width
-func LvStyleSetArcWidth(style *lv_style_t, value c.Int)
+func LvStyleSetArcWidth(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetArcRounded C.lv_style_set_arc_rounded
-func LvStyleSetArcRounded(style *lv_style_t, value bool)
+func LvStyleSetArcRounded(style *LvStyleT, value bool)
 
 //go:linkname LvStyleSetArcColor C.lv_style_set_arc_color
-func LvStyleSetArcColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetArcColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetArcOpa C.lv_style_set_arc_opa
-func LvStyleSetArcOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetArcOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetArcImageSrc C.lv_style_set_arc_image_src
-func LvStyleSetArcImageSrc(style *lv_style_t, value unsafe.Pointer)
+func LvStyleSetArcImageSrc(style *LvStyleT, value unsafe.Pointer)
 
 //go:linkname LvStyleSetTextColor C.lv_style_set_text_color
-func LvStyleSetTextColor(style *lv_style_t, value lv_color_t)
+func LvStyleSetTextColor(style *LvStyleT, value lv_color_t)
 
 //go:linkname LvStyleSetTextOpa C.lv_style_set_text_opa
-func LvStyleSetTextOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetTextOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetTextFont C.lv_style_set_text_font
-func LvStyleSetTextFont(style *lv_style_t, value *lv_font_t)
+func LvStyleSetTextFont(style *LvStyleT, value *lv_font_t)
 
 //go:linkname LvStyleSetTextLetterSpace C.lv_style_set_text_letter_space
-func LvStyleSetTextLetterSpace(style *lv_style_t, value c.Int)
+func LvStyleSetTextLetterSpace(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTextLineSpace C.lv_style_set_text_line_space
-func LvStyleSetTextLineSpace(style *lv_style_t, value c.Int)
+func LvStyleSetTextLineSpace(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetTextDecor C.lv_style_set_text_decor
-func LvStyleSetTextDecor(style *lv_style_t, value lv_text_decor_t)
+func LvStyleSetTextDecor(style *LvStyleT, value lv_text_decor_t)
 
 //go:linkname LvStyleSetTextAlign C.lv_style_set_text_align
-func LvStyleSetTextAlign(style *lv_style_t, value lv_text_align_t)
+func LvStyleSetTextAlign(style *LvStyleT, value lv_text_align_t)
 
 //go:linkname LvStyleSetRadialOffset C.lv_style_set_radial_offset
-func LvStyleSetRadialOffset(style *lv_style_t, value c.Int)
+func LvStyleSetRadialOffset(style *LvStyleT, value c.Int)
 
 //go:linkname LvStyleSetClipCorner C.lv_style_set_clip_corner
-func LvStyleSetClipCorner(style *lv_style_t, value bool)
+func LvStyleSetClipCorner(style *LvStyleT, value bool)
 
 //go:linkname LvStyleSetOpa C.lv_style_set_opa
-func LvStyleSetOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetOpaLayered C.lv_style_set_opa_layered
-func LvStyleSetOpaLayered(style *lv_style_t, value lv_opa_t)
+func LvStyleSetOpaLayered(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetColorFilterDsc C.lv_style_set_color_filter_dsc
-func LvStyleSetColorFilterDsc(style *lv_style_t, value *lv_color_filter_dsc_t)
+func LvStyleSetColorFilterDsc(style *LvStyleT, value *lv_color_filter_dsc_t)
 
 //go:linkname LvStyleSetColorFilterOpa C.lv_style_set_color_filter_opa
-func LvStyleSetColorFilterOpa(style *lv_style_t, value lv_opa_t)
+func LvStyleSetColorFilterOpa(style *LvStyleT, value lv_opa_t)
 
 //go:linkname LvStyleSetAnim C.lv_style_set_anim
-func LvStyleSetAnim(style *lv_style_t, value *lv_anim_t)
+func LvStyleSetAnim(style *LvStyleT, value *lv_anim_t)
 
 //go:linkname LvStyleSetAnimDuration C.lv_style_set_anim_duration
-func LvStyleSetAnimDuration(style *lv_style_t, value c.Uint)
+func LvStyleSetAnimDuration(style *LvStyleT, value c.Uint)
 
 //go:linkname LvStyleSetTransition C.lv_style_set_transition
-func LvStyleSetTransition(style *lv_style_t, value *lv_style_transition_dsc_t)
+func LvStyleSetTransition(style *LvStyleT, value *lv_style_transition_dsc_t)
 
 //go:linkname LvStyleSetBlendMode C.lv_style_set_blend_mode
-func LvStyleSetBlendMode(style *lv_style_t, value lv_blend_mode_t)
+func LvStyleSetBlendMode(style *LvStyleT, value lv_blend_mode_t)
 
 //go:linkname LvStyleSetLayout C.lv_style_set_layout
-func LvStyleSetLayout(style *lv_style_t, value c.Int16T)
+func LvStyleSetLayout(style *LvStyleT, value c.Int16T)
 
 //go:linkname LvStyleSetBaseDir C.lv_style_set_base_dir
-func LvStyleSetBaseDir(style *lv_style_t, value lv_base_dir_t)
+func LvStyleSetBaseDir(style *LvStyleT, value lv_base_dir_t)
 
 //go:linkname LvStyleSetBitmapMaskSrc C.lv_style_set_bitmap_mask_src
-func LvStyleSetBitmapMaskSrc(style *lv_style_t, value *c.Void)
+func LvStyleSetBitmapMaskSrc(style *LvStyleT, value *c.Void)
 
 //go:linkname LvStyleSetRotarySensitivity C.lv_style_set_rotary_sensitivity
-func LvStyleSetRotarySensitivity(style *lv_style_t, value c.Int16T)
+func LvStyleSetRotarySensitivity(style *LvStyleT, value c.Int16T)

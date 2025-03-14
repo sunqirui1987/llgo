@@ -31,7 +31,7 @@ const (
 func LvImageCreate(parent *core.LvObjT) *core.LvObjT
 
 //go:linkname LvImageSetSrc C.lv_image_set_src
-func LvImageSetSrc(obj *core.LvObjT, src unsafe.Pointer)
+func LvImageSetSrc(obj *core.LvObjT, src *c.Void)
 
 //go:linkname LvImageSetOffsetX C.lv_image_set_offset_x
 func LvImageSetOffsetX(obj *core.LvObjT, x c.Int32T)

@@ -6,61 +6,61 @@ import (
 )
 
 //go:linkname LvObjCreate C.lv_obj_create
-func LvObjCreate(parent *lv_obj_t) *lv_obj_t
+func LvObjCreate(parent *LvObjT) *LvObjT
 
 //go:linkname LvObjAddFlag C.lv_obj_add_flag
-func LvObjAddFlag(obj *lv_obj_t, f lv_obj_flag_t)
+func LvObjAddFlag(obj *LvObjT, f lv_obj_flag_t)
 
 //go:linkname LvObjRemoveFlag C.lv_obj_remove_flag
-func LvObjRemoveFlag(obj *lv_obj_t, f lv_obj_flag_t)
+func LvObjRemoveFlag(obj *LvObjT, f lv_obj_flag_t)
 
 //go:linkname LvObjUpdateFlag C.lv_obj_update_flag
-func LvObjUpdateFlag(obj *lv_obj_t, f lv_obj_flag_t, v bool)
+func LvObjUpdateFlag(obj *LvObjT, f lv_obj_flag_t, v bool)
 
 //go:linkname LvObjAddState C.lv_obj_add_state
-func LvObjAddState(obj *lv_obj_t, state lv_state_t)
+func LvObjAddState(obj *LvObjT, state lv_state_t)
 
 //go:linkname LvObjRemoveState C.lv_obj_remove_state
-func LvObjRemoveState(obj *lv_obj_t, state lv_state_t)
+func LvObjRemoveState(obj *LvObjT, state lv_state_t)
 
 //go:linkname LvObjSetState C.lv_obj_set_state
-func LvObjSetState(obj *lv_obj_t, state lv_state_t, v bool)
+func LvObjSetState(obj *LvObjT, state lv_state_t, v bool)
 
 //go:linkname LvObjSetUserData C.lv_obj_set_user_data
-func LvObjSetUserData(obj *lv_obj_t, user_data unsafe.Pointer)
+func LvObjSetUserData(obj *LvObjT, user_data unsafe.Pointer)
 
 //go:linkname LvObjHasFlag C.lv_obj_has_flag
-func LvObjHasFlag(obj *lv_obj_t, f lv_obj_flag_t) bool
+func LvObjHasFlag(obj *LvObjT, f lv_obj_flag_t) bool
 
 //go:linkname LvObjHasFlagAny C.lv_obj_has_flag_any
-func LvObjHasFlagAny(obj *lv_obj_t, f lv_obj_flag_t) bool
+func LvObjHasFlagAny(obj *LvObjT, f lv_obj_flag_t) bool
 
 //go:linkname LvObjGetState C.lv_obj_get_state
-func LvObjGetState(obj *lv_obj_t) lv_state_t
+func LvObjGetState(obj *LvObjT) lv_state_t
 
 //go:linkname LvObjHasState C.lv_obj_has_state
-func LvObjHasState(obj *lv_obj_t, state lv_state_t) bool
+func LvObjHasState(obj *LvObjT, state lv_state_t) bool
 
 //go:linkname LvObjGetGroup C.lv_obj_get_group
-func LvObjGetGroup(obj *lv_obj_t) *lv_group_t
+func LvObjGetGroup(obj *LvObjT) *lv_group_t
 
 //go:linkname LvObjGetUserData C.lv_obj_get_user_data
-func LvObjGetUserData(obj *lv_obj_t) unsafe.Pointer
+func LvObjGetUserData(obj *LvObjT) unsafe.Pointer
 
 //go:linkname LvObjAllocateSpecAttr C.lv_obj_allocate_spec_attr
-func LvObjAllocateSpecAttr(obj *lv_obj_t)
+func LvObjAllocateSpecAttr(obj *LvObjT)
 
 //go:linkname LvObjCheckType C.lv_obj_check_type
-func LvObjCheckType(obj *lv_obj_t, class_p *lv_obj_class_t) bool
+func LvObjCheckType(obj *LvObjT, class_p *lv_obj_class_t) bool
 
 //go:linkname LvObjHasClass C.lv_obj_has_class
-func LvObjHasClass(obj *lv_obj_t, class_p *lv_obj_class_t) bool
+func LvObjHasClass(obj *LvObjT, class_p *lv_obj_class_t) bool
 
 //go:linkname LvObjGetClass C.lv_obj_get_class
-func LvObjGetClass(obj *lv_obj_t) *lv_obj_class_t
+func LvObjGetClass(obj *LvObjT) *lv_obj_class_t
 
 //go:linkname LvObjIsValid C.lv_obj_is_valid
-func LvObjIsValid(obj *lv_obj_t) bool
+func LvObjIsValid(obj *LvObjT) bool
 
 //go:linkname LvObjNullOnDelete C.lv_obj_null_on_delete
-func LvObjNullOnDelete(obj_ptr **lv_obj_t)
+func LvObjNullOnDelete(obj_ptr **LvObjT)

@@ -7,4 +7,4 @@ import (
 )
 
 //go:linkname LvColorHex C.lv_color_hex
-func LvColorHex(value c.Int) lv_color_t
+func LvColorHex(value c.Int) LvColorT
