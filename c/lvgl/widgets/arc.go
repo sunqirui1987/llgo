@@ -4,11 +4,10 @@ import (
 	_ "unsafe"
 
 	"github.com/goplus/llgo/c"
+	core "github.com/goplus/llgo/c/lvgl/core"
 )
 
-type lv_value_precise_t = c.Float
-
-type lv_arc_mode_t = c.Int
+type lv_arc_mode_t c.Int
 
 const (
 	LV_ARC_MODE_NORMAL lv_arc_mode_t = iota
@@ -16,143 +15,80 @@ const (
 	LV_ARC_MODE_REVERSE
 )
 
-/**
- * Create an arc object
- * @param parent    pointer to an object, it will be the parent of the new arc
- * @return          pointer to the created arc
- */
-// lv_obj_t * lv_arc_create(lv_obj_t * parent);
-
 //go:linkname LvArcCreate C.lv_arc_create
-func LvArcCreate(parent *c.Void) *c.Void
-
-/*======================
- * Add/remove functions
- *=====================*/
-
-/*=====================
- * Setter functions
- *====================*/
-
-/**
- * Set the start angle of an arc. 0 deg: right, 90 bottom, etc.
- * @param obj       pointer to an arc object
- * @param start     the start angle. (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_start_angle(lv_obj_t * obj, lv_value_precise_t start);
+func LvArcCreate(parent *core.LvObjT) *core.LvObjT
 
 //go:linkname LvArcSetStartAngle C.lv_arc_set_start_angle
-func LvArcSetStartAngle(obj *c.Void, start lv_value_precise_t)
-
-/**
- * Set the end angle of an arc. 0 deg: right, 90 bottom, etc.
- * @param obj       pointer to an arc object
- * @param end       the end angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_end_angle(lv_obj_t * obj, lv_value_precise_t end);
+func LvArcSetStartAngle(obj *core.LvObjT, start lv_value_precise_t)
 
 //go:linkname LvArcSetEndAngle C.lv_arc_set_end_angle
-func LvArcSetEndAngle(obj *c.Void, end lv_value_precise_t)
-
-/**
- * Set the start and end angles
- * @param obj       pointer to an arc object
- * @param start     the start angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- * @param end       the end angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_angles(lv_obj_t * obj, lv_value_precise_t start, lv_value_precise_t end);
+func LvArcSetEndAngle(obj *core.LvObjT, end lv_value_precise_t)
 
 //go:linkname LvArcSetAngles C.lv_arc_set_angles
-func LvArcSetAngles(obj *c.Void, start lv_value_precise_t, end lv_value_precise_t)
-
-/**
- * Set the start angle of an arc background. 0 deg: right, 90 bottom, etc.
- * @param obj       pointer to an arc object
- * @param start     the start angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_bg_start_angle(lv_obj_t * obj, lv_value_precise_t start);
+func LvArcSetAngles(obj *core.LvObjT, start, end lv_value_precise_t)
 
 //go:linkname LvArcSetBgStartAngle C.lv_arc_set_bg_start_angle
-func LvArcSetBgStartAngle(obj *c.Void, start lv_value_precise_t)
-
-/**
- * Set the start angle of an arc background. 0 deg: right, 90 bottom etc.
- * @param obj       pointer to an arc object
- * @param end       the end angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_bg_end_angle(lv_obj_t * obj, lv_value_precise_t end);
+func LvArcSetBgStartAngle(obj *core.LvObjT, start lv_value_precise_t)
 
 //go:linkname LvArcSetBgEndAngle C.lv_arc_set_bg_end_angle
-func LvArcSetBgEndAngle(obj *c.Void, end lv_value_precise_t)
-
-/**
- * Set the start and end angles of the arc background
- * @param obj       pointer to an arc object
- * @param start     the start angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- * @param end       the end angle  (if `LV_USE_FLOAT` is enabled it can be fractional too.)
- */
-// void lv_arc_set_bg_angles(lv_obj_t * obj, lv_value_precise_t start, lv_value_precise_t end);
+func LvArcSetBgEndAngle(obj *core.LvObjT, end lv_value_precise_t)
 
 //go:linkname LvArcSetBgAngles C.lv_arc_set_bg_angles
-func LvArcSetBgAngles(obj *c.Void, start lv_value_precise_t, end lv_value_precise_t)
-
-/**
- * Set the rotation for the whole arc
- * @param obj           pointer to an arc object
- * @param rotation      rotation angle
- */
-// void lv_arc_set_rotation(lv_obj_t * obj, int32_t rotation);
+func LvArcSetBgAngles(obj *core.LvObjT, start, end lv_value_precise_t)
 
 //go:linkname LvArcSetRotation C.lv_arc_set_rotation
-func LvArcSetRotation(obj *c.Void, rotation c.Int)
-
-/**
- * Set the type of arc.
- * @param obj       pointer to arc object
- * @param type      arc's mode
- */
-// void lv_arc_set_mode(lv_obj_t * obj, lv_arc_mode_t type);
+func LvArcSetRotation(obj *core.LvObjT, rotation c.Int32T)
 
 //go:linkname LvArcSetMode C.lv_arc_set_mode
-func LvArcSetMode(obj *c.Void, _type lv_arc_mode_t)
-
-/**
- * Set a new value on the arc
- * @param obj       pointer to an arc object
- * @param value     new value
- */
-// void lv_arc_set_value(lv_obj_t * obj, int32_t value);
+func LvArcSetMode(obj *core.LvObjT, mode lv_arc_mode_t)
 
 //go:linkname LvArcSetValue C.lv_arc_set_value
-func LvArcSetValue(obj *c.Void, value c.Int)
-
-/**
- * Set minimum and the maximum values of an arc
- * @param obj       pointer to the arc object
- * @param min       minimum value
- * @param max       maximum value
- */
-// void lv_arc_set_range(lv_obj_t * obj, int32_t min, int32_t max);
+func LvArcSetValue(obj *core.LvObjT, value c.Int32T)
 
 //go:linkname LvArcSetRange C.lv_arc_set_range
-func LvArcSetRange(obj *c.Void, min c.Int, max c.Int)
-
-/**
- * Set a change rate to limit the speed how fast the arc should reach the pressed point.
- * @param obj       pointer to an arc object
- * @param rate      the change rate
- */
-// void lv_arc_set_change_rate(lv_obj_t * obj, uint32_t rate);
+func LvArcSetRange(obj *core.LvObjT, min, max c.Int32T)
 
 //go:linkname LvArcSetChangeRate C.lv_arc_set_change_rate
-func LvArcSetChangeRate(obj *c.Void, rate c.Uint)
-
-/**
- * Set an offset angle for the knob
- * @param obj       pointer to an arc object
- * @param offset    knob offset from main arc in degrees
- */
-// void lv_arc_set_knob_offset(lv_obj_t * obj, int32_t offset);
+func LvArcSetChangeRate(obj *core.LvObjT, rate c.Uint32T)
 
 //go:linkname LvArcSetKnobOffset C.lv_arc_set_knob_offset
-func LvArcSetKnobOffset(obj *c.Void, offset c.Int)
+func LvArcSetKnobOffset(obj *core.LvObjT, offset c.Int32T)
+
+//go:linkname LvArcGetAngleStart C.lv_arc_get_angle_start
+func LvArcGetAngleStart(obj *core.LvObjT) lv_value_precise_t
+
+//go:linkname LvArcGetAngleEnd C.lv_arc_get_angle_end
+func LvArcGetAngleEnd(obj *core.LvObjT) lv_value_precise_t
+
+//go:linkname LvArcGetBgAngleStart C.lv_arc_get_bg_angle_start
+func LvArcGetBgAngleStart(obj *core.LvObjT) lv_value_precise_t
+
+//go:linkname LvArcGetBgAngleEnd C.lv_arc_get_bg_angle_end
+func LvArcGetBgAngleEnd(obj *core.LvObjT) lv_value_precise_t
+
+//go:linkname LvArcGetValue C.lv_arc_get_value
+func LvArcGetValue(obj *core.LvObjT) c.Int32T
+
+//go:linkname LvArcGetMinValue C.lv_arc_get_min_value
+func LvArcGetMinValue(obj *core.LvObjT) c.Int32T
+
+//go:linkname LvArcGetMaxValue C.lv_arc_get_max_value
+func LvArcGetMaxValue(obj *core.LvObjT) c.Int32T
+
+//go:linkname LvArcGetMode C.lv_arc_get_mode
+func LvArcGetMode(obj *core.LvObjT) lv_arc_mode_t
+
+//go:linkname LvArcGetRotation C.lv_arc_get_rotation
+func LvArcGetRotation(obj *core.LvObjT) c.Int32T
+
+//go:linkname LvArcGetKnobOffset C.lv_arc_get_knob_offset
+func LvArcGetKnobOffset(obj *core.LvObjT) c.Int32T
+
+//go:linkname LvArcAlignObjToAngle C.lv_arc_align_obj_to_angle
+func LvArcAlignObjToAngle(obj *core.LvObjT, obj_to_align *core.LvObjT, r_offset c.Int32T)
+
+//go:linkname LvArcRotateObjToAngle C.lv_arc_rotate_obj_to_angle
+func LvArcRotateObjToAngle(obj *core.LvObjT, obj_to_rotate *core.LvObjT, r_offset c.Int32T)
+
+// Note: lv_value_precise_t is typically float or int32_t depending on LV_USE_FLOAT
+type lv_value_precise_t c.Float
