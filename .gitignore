@@ -42,3 +42,4 @@ go.work*
 # GoReleaser
 .dist/
 .sysroot/
+c/lvgl/ext
