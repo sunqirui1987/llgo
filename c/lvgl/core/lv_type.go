@@ -150,7 +150,8 @@ type lv_area_t struct {
 
 //llgo:type C
 type lv_point_t struct {
-	Unused [0]byte
+	X c.Int32T
+	Y c.Int32T
 }
 
 //llgo:type C

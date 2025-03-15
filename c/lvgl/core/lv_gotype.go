@@ -33,3 +33,11 @@ type LvPointPreciseT lv_point_precise_t
 type LvDisplayT lv_display_t
 type LvThemeT lv_theme_t
 type LvTimerT lv_timer_t
+type LvAlignT lv_align_t
+type ValuePreciseT lv_value_precise_t
+type LvStyleSelectorT lv_style_selector_t
+type LvStylePropT lv_style_prop_t
+type LvPartT lv_part_t
+type LvStyleValueT lv_style_value_t
+type LvStyleResT lv_style_res_t
+type LvStyleStateCmpT lv_style_state_cmp_t
